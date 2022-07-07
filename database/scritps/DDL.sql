@@ -1,0 +1,24 @@
+CREATE DATABASE rpDB
+GO
+
+USE rpDB
+GO
+
+CREATE TABLE tipoUsuario(
+idTipoUsuario INT PRIMARY KEY IDENTITY(1,1),
+nomeTipo VARCHAR(50) NOT NULL,
+);
+GO
+
+CREATE TABLE usuario(
+idUsuario INT PRIMARY KEY IDENTITY(1,1),
+idTipoUsuario INT FOREIGN KEY REFERENCES tipoUsuario(idTipoUsuario),
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(200) NOT NULL UNIQUE,
+senha VARCHAR(100) NOT NULL,
+status BIT NOT NULL,
+dataNascimento DATE NOT NULL,
+cpf CHAR(11) UNIQUE NOT NULL,
+imagem VARCHAR(250)
+);
+GO

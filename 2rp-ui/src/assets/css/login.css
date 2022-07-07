@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    background-color: #FDF8F8;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-login{
+    width: 90vw;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0px auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-login{
+    display: flex;
+    justify-content: space-around;
+}
+
+.posicionamento-login{
+    height: 12%;
+    margin-right: 60%;
+}
+
+.bloco_login-login{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.h1-login{
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;;
+    color: #2F2E41;
+    font-weight: 700;
+}
+
+.input_login-login{
+    width: 80%;
+    height: 70px;
+    margin-left: 5%;
+    background: #FF6D63;
+    font-size: 24px;
+    border: none;
+    color: white;
+}
+
+.input_login-login::placeholder {
+    color: #ffffff;
+}
+
+.google-login{
+    width: 100px;
+    height: 100px;
+}
+
+.login_senha-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 26%;
+}
+
+.botoes-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 280px;
+}
+
+.btn_login-login{
+    border-radius: 30px;
+    width: 600px;
+    background: #FF6D63;
+}
+
+.btn_acessar-login{
+    width: 35%;
+    height: 20%;
+    background-color: #FF6D63;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mudar_senha-login{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #666666;
+    text-decoration: unset;
+}
+
+.erroMensagem-login{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: red;
+    margin: 1% 0% 1% 0%;
+}
+
+@media (min-width: 2000px){
+    .posicionamento-login{
+        margin-right: 55%;
+    }
+}
+
+@media (max-width: 1750px){
+    .img_login-login{
+        width: 90%;
+    }
+
+    .h1-login{
+        font-size: 64px;
+        margin-right: 8%;
+    }
+
+    .bloco_login-login {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 43vw;
+        margin-bottom: 15%;
+    }
+
+    .posicionamento-login {
+        height: 20%;
+
+    }
+
+    .google-login{
+        width: 110px;
+        height: 110px;
+    }
+
+    .botoes-login{
+        height: 330px;
+    }
+}
+
+@media (max-width: 1550px){
+    .img_login-login{
+        width: 90%;
+    }
+
+    .posicionamento-login {
+        height: 15%;
+        margin-right: 75%;
+    }
+
+    .h1-login {
+        font-size: 60px;
+    }
+
+    .google-login {
+        width: 75px;
+        height: 75px;
+    }
+
+    .input_login-login{
+        width: 525px;
+        height: 65px;
+    }
+
+    .mudar_senha-login{
+        font-size: 20px;
+    }
+}
