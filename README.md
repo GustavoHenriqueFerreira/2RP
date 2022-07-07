@@ -1,2 +1,2 @@
 # 2RP
-Video: https://youtu.be/h6F4e3o537c
+Video: https://www.youtube.com/watch?v=DY5OZbLOqW8
